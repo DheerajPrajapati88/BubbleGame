@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main>h1{
+    background-color: #111;
+    border-radius: 15px;
+    padding: 8px 20px;
+    margin-bottom: 1vw;
+    box-shadow: 0px 2px 5px 1px #00000069;
+    color: #fff;
+    font-weight: 500;
+    font-size: 2vw;
+
+}
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-image: linear-gradient(315deg, #378b29 0%, #74d680 74%);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}   
+
+.pannel{
+    width: 80%;
+    height:80%;
+    background-color: #dadada;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.p_top{
+    background-color:rgb(32, 133, 67) ;
+    /* background:linear-gradient(to bottom,#74D680, #378B29); */
+    padding: 0 35%;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    gap: 30px;
+}
+.elm{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.elm h2{
+    font-weight: 500;
+    font-size: 1.5vw;
+}
+.box{
+    padding: 5px 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #000;
+    font-weight: 600;
+    font-size: 20px;
+    color: green;
+    box-shadow: 0px 2px 5px 1px #00000069;
+
+}
+.pannel_bottom{
+    width: 100%;
+    height:calc(100% - 80px);
+    background-color:#111;
+    padding: 20px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    gap: 1vw;
+    flex-wrap: wrap;
+}
+.bubble{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(32, 133, 67);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    box-shadow: 1px 0px 1px 1px #fff ;
+}
+.bubble:hover{
+    background-color: rgb(18, 84, 50);
+    cursor: pointer;
+    box-shadow: none;
+    transform: scale(0.9);
+}
+
+/* mediaQueries */
+
+@media(max-width:425px){
+
+    .main>h1{
+        /* display: none; */
+        font-size: 3vw;
+
+    }
+    .pannel{
+        width: 90%;
+        height:90%;
+        background-color: #dadada;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .p_top{
+ 
+        justify-content: center;
+        height: 60px;
+    }
+    .bubble{
+        width: 40px;
+        height: 40px;
+    }
+    .box{
+    padding: 0.8vw 2.2vw;
+
+    }
+    .elm h2{
+        font-size: 3.5vw;
+        font-weight: 600;
+    }
+    .pannel_bottom{
+    height:calc(100% - 60px);
+    padding:1vw;
+
+
+    }
+    .pannel{
+        height: 90%;
+    }
+
+  
+}
+
+
